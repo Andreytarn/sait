@@ -1,6 +1,10 @@
-h1{ text-align: center }
-h2{ text-align: center }
-h3{ text-align: center }
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  text-align: center 
+}
 
 .custom-btn {
     width: 130px;
@@ -8,7 +12,6 @@ h3{ text-align: center }
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
     font-weight: 500;
     background: transparent;
     cursor: pointer;
