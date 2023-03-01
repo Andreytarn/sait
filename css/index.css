@@ -1,57 +1,114 @@
+/* Fonts */
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+@font-face {
+  font-family: 'Ubuntu-Bold';
+  src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
+}
+/* Super base */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  border: none;
+  vertical-align: baseline;
 }
-:root {
-  --color1: #74C7C7;
-  --color2: #56C7C7;
-  --color3: #0B5C5C;
-  --color4: #2E6B6B;
-  --color5: #238E8E;
-  --a-color1: #F6BE90;
-  --a-color2: #F6AA6B;
-  --a-color3: #9A5013;
-  --a-color4: #B27B4D;
-  --a-color5: #ED8B3A;
-}
+/* Common */
 body {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Ubuntu', 'Lato', sans-serif;
+  font-size: large;
 }
-
-h1, h2, h3, h4, h5, h6 { 
-  top: 10px;
+h1, h2, h3, h4, h5, h6, p { 
+  top: 20px;
   position: relative;
   text-align: center 
 }
 a {
+  font-family: 'Ubuntu-Bold';
   text-decoration-line: none;
+}
+/* For all */
+:root {
+  --accent-color: #51189A;
+  --gray-color: rgb(196, 196, 196);
 }
 .center {
   text-align: center;
 }
+/* Navigation bar */
 .navbar {
-  display: block;
-  top: 40px;
+  background-color: var(--accent-color);
+  top: 0px;
+  height: 110px;
+  width: 100%;
+  padding: 10px;
   position: relative;
-  border: #000000;
   border-radius: 1px;
-  
+  font-size: 24px;
+  line-height: 80px;
 }
+.nav-link {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+  margin-left: 20px;
 
+  height: 90px;
+  width: 200px;
+
+  text-align: center;
+  color: white;
+}
+.nav-link:hover {
+  color: var(--gray-color);
+}
+/* Controls */
 .btn {
+  display: inline-block;
   width: 130px;
   height: 40px;
-  color: black;
-  background-color: var(--color1);
-  font-weight: 700;
-  border-radius: 9px;
-  padding: 10px 25px;
+  color: white;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  font-family: 'Ubuntu-Bold';
+  padding: 10px;
+  text-align: center;
   cursor: pointer;
-  transition: all 0.3s ease;
   position: relative;
   display: inline-block;
   /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
   7px 7px 20px 0px rgba(0,0,0,.1),
   4px 4px 5px 0px rgba(0,0,0,.1); */
+}
+.btn:hover {
+  color: var(--gray-color);
+}
+.card {
+  position: relative;
+  display: table;
+  min-width: 100px;
+  min-height: 100px;
+  
+  margin: 10px;
+  padding: 10px;
+  
+  border-radius: 10px;
+  box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+}
+.card > * {
+  vertical-align: middle;
+  display: flex;
+  margin: 20px;
+  text-align: center;
+  flex: 0 0 calc(20% - 40px);
+}
+.card > .btn {
+  position: relative;
+  display: block;
+  top: 10px;
+  bottom: 10px;
 }
