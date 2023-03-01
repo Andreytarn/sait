@@ -67,8 +67,8 @@ a {
 /* Controls */
 .btn {
   display: inline-block;
-  width: 130px;
-  height: 40px;
+  min-width: 130px;
+  min-height: 40px;
   color: white;
   border-radius: 10px;
   background-color: var(--accent-color);
