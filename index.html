@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,17 @@
     <title>Clean Water</title>
     <link rel="stylesheet" href="css/index.css">
 </head>
+
 <body>
-    <div class="navbar">
-        <a class="nav-link" href="#">Заказчику</a>
-        <a class="nav-link" href="#">Метрология</a>
-        <a class="nav-link" href="#">Документы</a>
-    </div>
+    <header>
+        <div class="navbar">
+            <ul class="navbar-nav">
+                <li><a class="nav-link" href="#">Заказчику</a></li>
+                <li><a class="nav-link" href="#">Метрология</a></li>
+                <li><a class="nav-link" href="#">Документы</a></li>
+            </ul>
+        </div>
+    </header>
     <h1>Очистка воды</h1>
 
 
@@ -21,7 +27,7 @@
         <div class="card card-min">
             <h2>Последняя новость</h2>
             <p>Был добавлен важный документ в раздел сайта "Документы".</p>
-            <div class="btn">Перейти к документу</div>
+            <div class="btn"><a class="text-secondary" href="#">Перейти к документу</a></div>
         </div>
 
         <div class="card">
@@ -29,6 +35,12 @@
             <p>Card text text text text text text</p>
         </div>
     </div>
-    
+
+    <footer class="footer">
+        <div class="text-secondary">by
+            <a class="text-secondary" href="https://github.com/Katy248" target="_blank">Katy248</a>
+        </div>
+    </footer>
 </body>
+
 </html>

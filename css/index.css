@@ -1,4 +1,5 @@
 /* Fonts */
+@import 'site.css';
 @font-face {
   font-family: 'Ubuntu';
   src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
@@ -7,18 +8,19 @@
   font-family: 'Ubuntu-Bold';
   src: url('../fonts/Ubuntu/Ubuntu-Bold.ttf');
 }
-/* Super base */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  border: none;
-  vertical-align: baseline;
+/* For all */
+:root {
+  --accent-color: #51189A;
+  --gray-color: rgb(196, 196, 196);
+  --index: calc(1vw + 1vh);
+  --border-radius: 10px;
+  --font-color-primary: black;
+  --font-color-secondary: white;
 }
 /* Common */
 body {
   font-family: 'Ubuntu', 'Lato', sans-serif;
-  font-size: large;
+  font-size: calc(var(--index)*.7);
 }
 h1, h2, h3, h4, h5, h6, p { 
   top: 20px;
@@ -29,35 +31,44 @@ h1, h2, h3, h4, h5, h6, p {
 }
 a {
   text-decoration-line: none;
-}
-/* For all */
-:root {
-  --accent-color: #51189A;
-  --gray-color: rgb(196, 196, 196);
-  --border-radius: 10px;
+  
 }
 .center {
   text-align: center;
 }
+.text {
+  color: var(--font-color-primary);
+}
+.text-secondary {
+  color: var(--font-color-secondary);
+}
 /* Navigation bar */
 .navbar {
-  height: 50px;
+  height: calc(var(--index) * 2.5);
   width: 100%;
   padding: 10px;
   position: relative;
 
-  display: flex ;
+  display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items: center;
 
   background-color: var(--accent-color);
-  font-family: 'Ubuntu-Bold';
-  font-size: 18px;
+  font-family: 'Ubuntu';
+  font-size: calc(var(--index)*.9);
 
   box-shadow: 2px 2px 2px 0px rgba(255,255,255,.5),
   7px 7px 20px 0px rgba(0,0,0,.1),
   4px 4px 5px 0px rgba(0,0,0,.1);
 }
-.navbar > .nav-link {
+ul.navbar-nav{
+  display: flex;
+  flex-direction: row;
+  list-style-position: outside;
+  list-style-type: none;
+}
+.navbar-nav > .nav-link {
   display: table-cell;
   vertical-align: middle;
 }
@@ -65,13 +76,30 @@ a {
   position: relative;
   margin-right: 20px;
   margin-left: 20px;
-  padding-left: 20px;
+  /* padding-left: 20px; */
   
   text-align: center;
   color: white;
 }
 .nav-link:hover {
   color: var(--gray-color);
+}
+/* Footer */
+footer.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  height: calc(var(--index) * 2.5);
+  width: 100vw;
+  background-color: var(--accent-color);
+}
+footer > * {
+  display: table-cell;
+  vertical-align: middle;
 }
 /* Controls */
 /* Container */
@@ -83,9 +111,12 @@ a {
 }
 /* Button */
 .btn {
-  display: inline-block;
-  min-width: 130px;
-  min-height: 40px;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+
+  min-width: calc(var(--index));
+  min-height: calc(var(--index));
   color: white;
   border-radius: var(--border-radius);
   background-color: var(--accent-color);
@@ -94,7 +125,6 @@ a {
   text-align: center;
   cursor: pointer;
   position: relative;
-  display: inline-block;
   /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
   7px 7px 20px 0px rgba(0,0,0,.1),
   4px 4px 5px 0px rgba(0,0,0,.1); */
@@ -118,6 +148,7 @@ a {
   4px 4px 5px 0px rgba(0,0,0,.1);
 }
 .card > * {
+  min-width: 100px;
   vertical-align: middle;
   display: flex;
   margin: 20px;
@@ -131,5 +162,5 @@ a {
   bottom: 10px;
 }
 .card-min {
-  max-width: 350px;
+  max-width: calc(var(--index) * 15);
 }
