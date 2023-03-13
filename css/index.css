@@ -112,7 +112,7 @@ footer.footer {
   left: 0;
   bottom: 0;
   height: max-content;
-  width: 100vw;
+  width: 100%;
   background-color: var(--accent-color);
 }
 footer > * {
@@ -185,7 +185,7 @@ footer > * {
 }
 .card-min {
   width: fit-content;
-  max-width: calc(var(--index) * 15);
+  max-width: 45%;
 }
 @media (max-width: 500px) {
   body {
