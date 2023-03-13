@@ -11,7 +11,8 @@
 }
 /* For all */
 :root {
-  --accent-color: #51189A;
+  /* --accent-color: #51189A; */
+  --accent-color: #18419a;
   --gray-color: rgb(196, 196, 196);
   --index: calc(1vw + 1vh);
   --border-radius: 10px;
@@ -23,6 +24,8 @@ body {
   font-family: 'Ubuntu', 'Lato', sans-serif;
   font-size: calc(1rem);
   min-width: fit-content;
+  background-image: url("../img/water-bg-3.webp");
+  background-color: white;
 }
 
 h1, h2, h3, h4, h5, h6, p { 
@@ -161,6 +164,7 @@ footer > * {
   margin: 10px;
   padding: 10px;
   
+  background-color: white;
   border-radius: var(--border-radius);
   box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
   7px 7px 20px 0px rgba(0,0,0,.1),
