@@ -20,6 +20,9 @@ h3 {
 h4 {
     font-size: large;
 }
+p, a, q {
+    font-size: medium;
+}
 h1, h2, h3, h4 {
     text-shadow: white 0px 0px 2px;
 }
@@ -39,4 +42,21 @@ h1, h2, h3, h4 {
 }
 .link-secondary:hover {
     color: lightgrey;
+}
+@media (max-width: 400px) {
+    h1 {
+        font-size: x-large;
+    }
+    h2 {
+        font-size: larger;
+    }
+    h3 {
+        font-size: large;
+    }
+    h4 {
+        font-size: medium;
+    }
+    p, a, q {
+        font-size: small;
+    }
 }

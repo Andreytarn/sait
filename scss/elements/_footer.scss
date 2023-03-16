@@ -18,3 +18,8 @@ footer.footer {
         vertical-align: middle;
     }
 }
+@media (max-width: 440px) {
+  footer.footer {
+    font-size: small;
+  }
+}

@@ -1,9 +1,9 @@
 .card {
   position: relative;
   display: inline-block;
-  min-width: 100px;
+  min-width: 2rem;
   min-height: 100px;
-  
+  vertical-align: top;
   margin: 10px;
   padding: 10px;
   
@@ -13,24 +13,33 @@
   7px 7px 20px 0px rgba(0,0,0,.1),
   4px 4px 5px 0px rgba(0,0,0,.1);
   > * {
-    min-width: 100px;
+    min-width: 80px;
     vertical-align: middle;
     display: flex;
     margin: 20px;
     text-align: center;
     flex: 0 0 calc(20% - 40px);
-    }
+  }
+  > p {
+    text-align: left;
+  }
+  > .btn {
+    position: relative;
+    display: block;
+    top: 10px;
+    bottom: 10px;
+  }
+  
 }
-.card > p {
-  text-align: left;
-}
-.card > .btn {
-  position: relative;
-  display: block;
-  top: 10px;
-  bottom: 10px;
-}
+
 .card-min {
+  @extend .card;
   width: fit-content;
-  max-width: 45%;
+  max-width: 44%;
+  max-height: 20rem;
 }
+/* @media (max-width: 400px) {
+  .card > h2 {
+    font-size: medium;
+  }
+} */
