@@ -1,0 +1,42 @@
+@import '../utils/reset';
+@import '../utils/variables';
+
+a {
+    text-decoration-line: none;
+}
+
+h1 {
+    font-size: xx-large;
+}
+
+h2 {
+    font-size: x-large;
+}
+
+h3 {
+    font-size: larger;
+}
+
+h4 {
+    font-size: large;
+}
+h1, h2, h3, h4 {
+    text-shadow: white 0px 0px 2px;
+}
+.text {
+  color: $font-color;
+  text-align: center;
+  position: relative;
+  margin: .3rem;
+}
+.text-secondary {
+    @extend .text;
+    color: $font-color-secondary;
+}
+.link-secondary {
+    @extend .text-secondary;
+    color: $link-secondary-font-color;
+}
+.link-secondary:hover {
+    color: lightgrey;
+}

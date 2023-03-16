@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    vertical-align: baseline;
+    font-size: inherit;
+    font-family: inherit;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+q {
+    text-align: center;
+    position: relative;
+    margin: 10px;
+    word-wrap: break-word;
+    vertical-align: middle;
+
+}
+ul {
+    list-style-type: none;
+}
+
+header, 
+main,
+footer {
+    display: block;
+    position: absolute;
+    width: 100%;
+    padding: 0;
+}
+header {
+    top: 0;
+    height: $navbar-height;
+    overflow: hidden;
+}
+main {
+    top: $navbar-height;
+    bottom: $footer-height;
+    overflow: auto;
+}
+footer {
+    bottom: 0;
+    height: $footer-height;
+    overflow: hidden;
+}

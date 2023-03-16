@@ -1,0 +1,26 @@
+@import 'utils/variables';
+
+$navbar-min-height: 2.5rem;
+$footer-height: 4rem;
+// $body-background-image: url("../img/water-bg-4.jpg");
+
+$element-corner-radius: 10px;
+$navbar-height: 2.5rem;
+$footer-height: 2.5rem;
+$accent-color: #18419a;
+$navbar-background: $accent-color;
+$footer-background: $navbar-background;
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/Ubuntu/Ubuntu-Regular.ttf');
+}
+$font-family: 'Ubuntu', Arial;
+
+body {
+    font-size: $font-size;
+    font-family: $font-family;
+    color: $font-color;
+    background-color: $body-background-color;
+    background-image: $body-background-image;
+}

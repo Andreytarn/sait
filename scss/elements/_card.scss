@@ -1,0 +1,36 @@
+.card {
+  position: relative;
+  display: inline-block;
+  min-width: 100px;
+  min-height: 100px;
+  
+  margin: 10px;
+  padding: 10px;
+  
+  background-color: white;
+  border-radius: $element-corner-radius;
+  box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1);
+  > * {
+    min-width: 100px;
+    vertical-align: middle;
+    display: flex;
+    margin: 20px;
+    text-align: center;
+    flex: 0 0 calc(20% - 40px);
+    }
+}
+.card > p {
+  text-align: left;
+}
+.card > .btn {
+  position: relative;
+  display: block;
+  top: 10px;
+  bottom: 10px;
+}
+.card-min {
+  width: fit-content;
+  max-width: 45%;
+}

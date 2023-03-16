@@ -1,0 +1,26 @@
+/* Common */
+$accent-color: blue !default;
+/* Body */
+/// Font family
+$font-family: Arial !default;
+$font-color: black !default;
+$font-size: medium !default;
+$font-color-secondary: white !default;
+$link-font-color: $font-color !default;
+$link-secondary-font-color: $font-color-secondary !default;
+/* Navbar */
+$navbar-height: 5rem !default;
+$navbar-min-height: 3rem !default;
+$navbar-background: $accent-color !default;
+$navbar-font-family: $font-family !default;
+
+$nav-link-font-color: $font-color-secondary !default;
+$nav-link-hover-font-color: lightgray !default;
+
+$footer-height: $navbar-height !default;
+$footer-background: $accent-color !default;
+
+$body-background-color: white !default;
+$body-background-image: null;
+
+$element-corner-radius: 1rem !default;
