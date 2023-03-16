@@ -1,0 +1,31 @@
+.btn {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+
+  color: $font-color;
+  border-radius: $element-corner-radius;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  border: solid gray .1rem;
+  /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1); */
+}
+
+.btn:hover {
+  background-color: lightgray;
+}
+
+.btn-primary {
+    @extend .btn;
+    border: none;
+    color: $font-color-secondary;
+    background-color: $accent-color;
+}
+.btn-primary:hover {
+  background-color: lightgray;
+  color: $font-color;
+}

@@ -10,6 +10,21 @@
 body {
 	height: 100svh;
 }
+h1, h2, h3, h4, h5, h6, p {
+	text-align: center;
+	position: relative;
+	text-align: center;
+	margin: 10px;
+	word-wrap: break-word;
+	text-shadow: white 0px 0px 2px ;
+}
+a {
+	text-decoration-line: none;
+}
+h1 { font-size: xx-large; }
+h2 { font-size: x-large; }
+h3 { font-size: larger; }
+h4 { font-size: large; }
 /* html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,

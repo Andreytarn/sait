@@ -1,0 +1,7 @@
+@import '../utils/reset';
+@import '../utils/variables';
+
+main {
+    top: $navbar-height;
+    font-family: $font-family;
+}
