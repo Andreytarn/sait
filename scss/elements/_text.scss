@@ -43,8 +43,21 @@ h1, h2, h3, h4 {
 .link-secondary:hover {
     color: lightgrey;
 }
-.list-vertical {
+.list {
+    text-align: left;
+    li {
+        margin-top: .5rem;
+    }
+}
+.marked-list {
+    li:before {
+        content: '●';
+    }
+}
+ul.list-vertical {
+    @extend .list;
     flex-direction: column;
+    
 }
 @media (max-width: 400px) {
     h1 {
