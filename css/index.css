@@ -1,1 +1,635 @@
-@font-face{font-family:"Ubuntu";src:url("../fonts/Ubuntu/Ubuntu-Regular.ttf")}body{font-size:medium;font-family:"Ubuntu",Arial;color:#000;background-color:#fff;background-image:url("../img/water-bg-4.jpg")}*{margin:0;padding:0;box-sizing:border-box;border:none;vertical-align:baseline;font-size:inherit;font-family:inherit}body{height:100%;width:100%}h1,h2,h3,h4,h5,h6,p,a,q{text-align:center;position:relative;margin:10px;word-wrap:break-word;vertical-align:middle}ul{list-style-type:none}header,main,footer{display:block;position:absolute;width:100%;padding:0}header{top:0;height:2.5rem;overflow:hidden}main{top:2.5rem;bottom:2.5rem;overflow:auto}footer{bottom:0;height:2.5rem;overflow:hidden}a{text-decoration-line:none}h1{font-size:xx-large}h2{font-size:x-large}h3{font-size:larger}h4{font-size:large}p,a,q{font-size:medium}h1,h2,h3,h4{text-shadow:#fff 0px 0px 2px}.text,.text-secondary,.link-secondary,.nav-link{color:#000;text-align:center;position:relative;margin:.3rem}.text-secondary,.link-secondary,.nav-link{color:#fff}.link-secondary,.nav-link{color:#fff}.link-secondary:hover,.nav-link:hover{color:#d3d3d3}@media(max-width: 400px){h1{font-size:x-large}h2{font-size:larger}h3{font-size:large}h4{font-size:medium}p,a,q{font-size:small}}*{margin:0;padding:0;box-sizing:border-box;border:none;vertical-align:baseline;font-size:inherit;font-family:inherit}body{height:100%;width:100%}h1,h2,h3,h4,h5,h6,p,a,q{text-align:center;position:relative;margin:10px;word-wrap:break-word;vertical-align:middle}ul{list-style-type:none}header,main,footer{display:block;position:absolute;width:100%;padding:0}header{top:0;height:2.5rem;overflow:hidden}main{top:2.5rem;bottom:2.5rem;overflow:auto}footer{bottom:0;height:2.5rem;overflow:hidden}*{margin:0;padding:0;box-sizing:border-box;border:none;vertical-align:baseline;font-size:inherit;font-family:inherit}body{height:100%;width:100%}h1,h2,h3,h4,h5,h6,p,a,q{text-align:center;position:relative;margin:10px;word-wrap:break-word;vertical-align:middle}ul{list-style-type:none}header,main,footer{display:block;position:absolute;width:100%;padding:0}header{top:0;height:2.5rem;overflow:hidden}main{top:2.5rem;bottom:2.5rem;overflow:auto}footer{bottom:0;height:2.5rem;overflow:hidden}a{text-decoration-line:none}h1{font-size:xx-large}h2{font-size:x-large}h3{font-size:larger}h4{font-size:large}p,a,q{font-size:medium}h1,h2,h3,h4{text-shadow:#fff 0px 0px 2px}.text,.text-secondary,.link-secondary,.nav-link{color:#000;text-align:center;position:relative;margin:.3rem}.text-secondary,.link-secondary,.nav-link{color:#fff}.link-secondary,.nav-link{color:#fff}.link-secondary:hover,.nav-link:hover{color:#d3d3d3}@media(max-width: 400px){h1{font-size:x-large}h2{font-size:larger}h3{font-size:large}h4{font-size:medium}p,a,q{font-size:small}}header.navbar{min-height:2.5rem;height:2.5rem;position:absolute;display:flex;flex-direction:row;justify-content:flex-start;align-items:center;background-color:#18419a;font-family:"Ubuntu",Arial;font-size:large;border-bottom:solid .1rem #d3d3d3}header.navbar ul.navbar-nav{display:flex;flex-direction:row}header.navbar .navbar-brand{margin-left:0;display:flex;justify-content:center;align-items:center;flex-direction:row;position:relative}header.navbar .navbar-brand img{max-width:2rem;max-height:2rem;margin:.5rem}.nav-link{margin-right:1rem;margin-left:1rem;text-align:center;color:#fff}.nav-link:hover{color:#d3d3d3}.nav-link:focus{text-decoration:underline}@media(max-width: 500px){header.navbar{font-size:medium}}@media(max-width: 440px){header.navbar{font-size:small}}*{margin:0;padding:0;box-sizing:border-box;border:none;vertical-align:baseline;font-size:inherit;font-family:inherit}body{height:100%;width:100%}h1,h2,h3,h4,h5,h6,p,a,q{text-align:center;position:relative;margin:10px;word-wrap:break-word;vertical-align:middle}ul{list-style-type:none}header,main,footer{display:block;position:absolute;width:100%;padding:0}header{top:0;height:2.5rem;overflow:hidden}main{top:2.5rem;bottom:2.5rem;overflow:auto}footer{bottom:0;height:2.5rem;overflow:hidden}footer.footer{height:2.5rem;width:100%;padding:.5rem;display:flex;flex-direction:row;align-items:center;justify-content:center;position:fixed;bottom:0;background-color:#18419a}footer.footer>*{display:table-cell;vertical-align:middle}@media(max-width: 440px){footer.footer{font-size:small}}.card,.card-min{position:relative;display:inline-block;min-width:2rem;min-height:100px;vertical-align:top;margin:10px;padding:10px;background-color:#fff;border-radius:10px;box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),7px 7px 20px 0px rgba(0,0,0,.1),4px 4px 5px 0px rgba(0,0,0,.1)}.card>*,.card-min>*{min-width:80px;vertical-align:middle;display:flex;margin:20px;text-align:center;flex:0 0 calc(20% - 40px)}.card>p,.card-min>p{text-align:left}.card>.btn,.card>.btn-primary,.card-min>.btn,.card-min>.btn-primary{position:relative;display:block;top:10px;bottom:10px}.card-min{width:fit-content;max-width:44%;max-height:20rem}.btn,.btn-primary{display:flex;justify-content:stretch;align-items:stretch;color:#000;border-radius:10px;padding:10px;text-align:center;cursor:pointer;position:relative;border:solid gray .1rem}.btn:hover,.btn-primary:hover{background-color:#d3d3d3}.btn-primary{border:none;color:#fff;background-color:#18419a}.btn-primary:hover{background-color:#d3d3d3;color:#000}*{margin:0;padding:0;box-sizing:border-box;border:none;vertical-align:baseline;font-size:inherit;font-family:inherit}body{height:100%;width:100%}h1,h2,h3,h4,h5,h6,p,a,q{text-align:center;position:relative;margin:10px;word-wrap:break-word;vertical-align:middle}ul{list-style-type:none}header,main,footer{display:block;position:absolute;width:100%;padding:0}header{top:0;height:2.5rem;overflow:hidden}main{top:2.5rem;bottom:2.5rem;overflow:auto}footer{bottom:0;height:2.5rem;overflow:hidden}main{top:2.5rem;font-family:"Ubuntu",Arial}/*# sourceMappingURL=index.css.map */
+/* Bases */ /* Common */
+/* Body */
+/* Navbar */
+@font-face {
+  font-family: "Ubuntu";
+  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
+}
+body {
+  font-size: medium;
+  font-family: "Ubuntu", Arial;
+  color: black;
+  background-color: white;
+  background-image: url("../img/water-bg-4.jpg");
+}
+
+/* Controls */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  vertical-align: baseline;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+q {
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header,
+main,
+footer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+}
+
+header {
+  top: 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+main {
+  top: 2.5rem;
+  bottom: 2.5rem;
+  overflow: auto;
+}
+
+footer {
+  bottom: 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+/* Common */
+/* Body */
+/* Navbar */
+a {
+  text-decoration-line: none;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: larger;
+}
+
+h4 {
+  font-size: large;
+}
+
+p, a, q {
+  font-size: medium;
+}
+
+h1, h2, h3, h4 {
+  text-shadow: white 0px 0px 2px;
+}
+
+.text, .text-secondary, .link-secondary, .nav-link {
+  color: black;
+  text-align: center;
+  position: relative;
+  margin: 0.3rem;
+}
+
+.text-secondary, .link-secondary, .nav-link {
+  color: white;
+}
+
+.link-secondary, .nav-link {
+  color: white;
+}
+
+.link-secondary:hover, .nav-link:hover {
+  color: lightgrey;
+}
+
+.list-vertical {
+  flex-direction: column;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: x-large;
+  }
+  h2 {
+    font-size: larger;
+  }
+  h3 {
+    font-size: large;
+  }
+  h4 {
+    font-size: medium;
+  }
+  p, a, q {
+    font-size: small;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  vertical-align: baseline;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+q {
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header,
+main,
+footer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+}
+
+header {
+  top: 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+main {
+  top: 2.5rem;
+  bottom: 2.5rem;
+  overflow: auto;
+}
+
+footer {
+  bottom: 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+/* Common */
+/* Body */
+/* Navbar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  vertical-align: baseline;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+q {
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header,
+main,
+footer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+}
+
+header {
+  top: 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+main {
+  top: 2.5rem;
+  bottom: 2.5rem;
+  overflow: auto;
+}
+
+footer {
+  bottom: 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+/* Common */
+/* Body */
+/* Navbar */
+a {
+  text-decoration-line: none;
+}
+
+h1 {
+  font-size: xx-large;
+}
+
+h2 {
+  font-size: x-large;
+}
+
+h3 {
+  font-size: larger;
+}
+
+h4 {
+  font-size: large;
+}
+
+p, a, q {
+  font-size: medium;
+}
+
+h1, h2, h3, h4 {
+  text-shadow: white 0px 0px 2px;
+}
+
+.text, .text-secondary, .link-secondary, .nav-link {
+  color: black;
+  text-align: center;
+  position: relative;
+  margin: 0.3rem;
+}
+
+.text-secondary, .link-secondary, .nav-link {
+  color: white;
+}
+
+.link-secondary, .nav-link {
+  color: white;
+}
+
+.link-secondary:hover, .nav-link:hover {
+  color: lightgrey;
+}
+
+.list-vertical {
+  flex-direction: column;
+}
+
+@media (max-width: 400px) {
+  h1 {
+    font-size: x-large;
+  }
+  h2 {
+    font-size: larger;
+  }
+  h3 {
+    font-size: large;
+  }
+  h4 {
+    font-size: medium;
+  }
+  p, a, q {
+    font-size: small;
+  }
+}
+header.navbar {
+  min-height: 2.5rem;
+  height: 2.5rem;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #18419a;
+  font-family: "Ubuntu", Arial;
+  font-size: large;
+  border-bottom: solid 0.1rem lightgray;
+  /* box-shadow: 2px 2px 2px 0px rgba(255, 255, 255, .5),
+      7px 7px 20px 0px rgba(0, 0, 0, .1),
+      4px 4px 5px 0px rgba(0, 0, 0, .1); */
+}
+header.navbar ul.navbar-nav {
+  display: flex;
+  flex-direction: row;
+}
+header.navbar .navbar-brand {
+  margin-left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+}
+header.navbar .navbar-brand img {
+  max-width: 2rem;
+  max-height: 2rem;
+  margin: 0.5rem;
+}
+
+.nav-link {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.nav-link:hover {
+  color: lightgray;
+}
+
+.nav-link:focus {
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  header.navbar {
+    font-size: medium;
+  }
+}
+@media (max-width: 440px) {
+  header.navbar {
+    font-size: small;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  vertical-align: baseline;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+q {
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header,
+main,
+footer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+}
+
+header {
+  top: 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+main {
+  top: 2.5rem;
+  bottom: 2.5rem;
+  overflow: auto;
+}
+
+footer {
+  bottom: 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+/* Common */
+/* Body */
+/* Navbar */
+footer.footer {
+  height: 2.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  background-color: #18419a;
+}
+footer.footer > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media (max-width: 440px) {
+  footer.footer {
+    font-size: small;
+  }
+}
+.card, .card-min {
+  position: relative;
+  display: inline-block;
+  min-width: 2rem;
+  min-height: 100px;
+  vertical-align: top;
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+}
+.card > *, .card-min > * {
+  min-width: 80px;
+  vertical-align: middle;
+  display: flex;
+  margin: 20px;
+  text-align: center;
+  flex: 0 0 calc(20% - 40px);
+}
+.card > p, .card-min > p {
+  text-align: left;
+}
+.card > .btn, .card > .btn-primary, .card-min > .btn, .card-min > .btn-primary {
+  position: relative;
+  display: block;
+  top: 10px;
+  bottom: 10px;
+}
+
+.card-min {
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 44%;
+  max-height: 20rem;
+}
+
+/* @media (max-width: 400px) {
+  .card > h2 {
+    font-size: medium;
+  }
+} */
+.btn, .btn-primary {
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  color: black;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  position: relative;
+  border: solid gray 0.1rem;
+  /* box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+  7px 7px 20px 0px rgba(0,0,0,.1),
+  4px 4px 5px 0px rgba(0,0,0,.1); */
+}
+
+.btn:hover, .btn-primary:hover {
+  background-color: lightgray;
+}
+
+.btn-primary {
+  border: none;
+  color: white;
+  background-color: #18419a;
+}
+
+.btn-primary:hover {
+  background-color: lightgray;
+  color: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  vertical-align: baseline;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+q {
+  text-align: center;
+  position: relative;
+  margin: 10px;
+  word-wrap: break-word;
+  vertical-align: middle;
+}
+
+ul {
+  list-style-type: none;
+}
+
+header,
+main,
+footer {
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding: 0;
+}
+
+header {
+  top: 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+main {
+  top: 2.5rem;
+  bottom: 2.5rem;
+  overflow: auto;
+}
+
+footer {
+  bottom: 0;
+  height: 2.5rem;
+  overflow: hidden;
+}
+
+/* Common */
+/* Body */
+/* Navbar */
+main {
+  top: 2.5rem;
+  font-family: "Ubuntu", Arial;
+}/*# sourceMappingURL=index.css.map */
