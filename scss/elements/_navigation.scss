@@ -1,6 +1,6 @@
-@use '../utils/reset';
-@use '../utils/variables';
-@use 'text';
+@import '../utils/reset';
+@import '../utils/variables';
+@import 'text';
 
 header.navbar {
   min-height: $navbar-min-height;

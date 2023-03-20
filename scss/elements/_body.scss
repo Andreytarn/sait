@@ -1,8 +1,8 @@
-@use '../utils/reset';
-@use '../utils/variables';
+@import '../utils/reset';
+@import '../utils/variables';
 
 
-@use 'main';
+@import 'main';
 
 header, 
 main,

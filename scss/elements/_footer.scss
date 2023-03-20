@@ -1,5 +1,5 @@
-@use '../utils/reset';
-@use '../utils/variables';
+@import '../utils/reset';
+@import '../utils/variables';
 
 footer.footer {
     height: $footer-height;

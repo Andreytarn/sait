@@ -1,10 +1,9 @@
 /* Bases */
-@use 'site';
+@import 'site';
 /* Controls */
-@use 'elements/text';
-@use 'elements/navigation';
-@use 'elements/footer';
-@use 'elements/card';
-@use 'elements/button';
-@use 'elements/main';
-
+@import 'elements/text';
+@import 'elements/navigation';
+@import 'elements/footer';
+@import 'elements/card';
+@import 'elements/button';
+@import 'elements/main';

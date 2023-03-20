@@ -31,9 +31,8 @@ $headers-font-family: 'Acrobat', 'Ubuntu', Arial;
 $h1-font-family: 'Acrobat-bold', 'Ubuntu', Arial;
 $font-size: meduim;
 $font-color: black;
-@use 'utils/variables';
-@use 'elements/body';
-
+@import 'utils/variables';
+@import 'elements/body';
 
 /* h1 {
   font-family: 'Acrobat-bold';
