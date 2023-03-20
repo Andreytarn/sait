@@ -32,27 +32,3 @@ q {
 ul {
     list-style-type: none;
 }
-
-header, 
-main,
-footer {
-    display: block;
-    position: absolute;
-    width: 100%;
-    padding: 0;
-}
-header {
-    top: 0;
-    height: $navbar-height;
-    overflow: hidden;
-}
-main {
-    top: $navbar-height;
-    bottom: $footer-height;
-    overflow: auto;
-}
-footer {
-    bottom: 0;
-    height: $footer-height;
-    overflow: hidden;
-}

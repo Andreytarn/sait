@@ -4,13 +4,18 @@
 a {
     text-decoration-line: none;
 }
-
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    font-family: $headers-font-family;
+}
 h1 {
-    font-size: xx-large;
+    font-size: calc(4rem);
+    font-family: $h1-font-family;
+    text-shadow: white 0px 0px 8px;
 }
 
 h2 {
-    font-size: x-large;
+    font-size: 2rem;
 }
 
 h3 {
@@ -22,9 +27,7 @@ h4 {
 }
 p, a, q {
     font-size: medium;
-}
-h1, h2, h3, h4 {
-    text-shadow: white 0px 0px 2px;
+    font-family: $font-family;
 }
 .text {
   color: $font-color;

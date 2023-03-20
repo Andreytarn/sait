@@ -5,3 +5,9 @@ main {
     top: $navbar-height;
     font-family: $font-family;
 }
+@media (min-height: 400px) {
+    main {
+        text-align: center;
+        // justify-content: center;
+    }
+}
