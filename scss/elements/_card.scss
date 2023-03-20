@@ -18,7 +18,7 @@ $card-margin: 10px;
     vertical-align: middle;
     display: flex;
     margin: 1rem;
-    text-align: center;
+    text-align: left;
     flex: 0 0 calc(20% - 40px);
   }
   > h2, h3, h4, h5, h6 {
@@ -33,15 +33,19 @@ $card-margin: 10px;
     top: 10px;
     bottom: 10px;
   }
+  width: fit-content;
   max-width: calc(100% - 2 * $card-margin - 3px);
   overflow: auto;
 }
 
-.card[size=min] {
+.card[size="min"] {
   @extend .card;
-  width: fit-content;
   max-width: calc(50% - 2 * $card-margin - 3px);
   max-height: 20rem;
+}
+.card[size="middle"] {
+  @extend .card;
+  max-width: calc(80% - 2 * $card-margin - 3px);
 }
 /* @media (max-width: 400px) {
   .card > h2 {
