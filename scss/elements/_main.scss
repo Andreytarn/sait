@@ -1,5 +1,5 @@
-@import '../utils/reset';
-@import '../utils/variables';
+@use '../utils/reset';
+@use '../utils/variables';
 
 main {
     top: $navbar-height;

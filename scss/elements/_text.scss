@@ -1,5 +1,5 @@
-@import '../utils/reset';
-@import '../utils/variables';
+@use '../utils/reset';
+@use '../utils/variables';
 
 a {
     text-decoration-line: none;
@@ -9,13 +9,21 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-family: $headers-font-family;
 }
+h1:hover { text-decoration: underline; }
+h2:hover { text-decoration: underline; }
+h3:hover { text-decoration: underline; }
+h4:hover { text-decoration: underline; }
+
 h1 {
     font-size: calc(4rem);
     font-family: $h1-font-family;
-    text-shadow: white 0px 0px 8px;
+    color: $h1-font-color;
+    text-shadow: whitesmoke 0px 0px 8px;
+    letter-spacing: .2rem;
 }
 
 h2 {
+    letter-spacing: .1rem;
     font-size: 2rem;
 }
 
